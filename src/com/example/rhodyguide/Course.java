@@ -3,7 +3,7 @@ package com.example.rhodyguide;
 public class Course {
 	
 	/**
-	 * Strings
+	 * Strings LIAHGLFHIGALEF
 	 */
 	private String subject, catalog, section, start, end, building, room, 
 					M = "", T = "", W = "", Th = "", F = "";

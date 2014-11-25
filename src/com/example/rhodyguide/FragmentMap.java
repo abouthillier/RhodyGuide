@@ -68,7 +68,6 @@ public class FragmentMap extends Fragment {
 		mGPS = new GPSTracker(this.getActivity());	    
     	mGPS.getLocation();
     	
-<<<<<<< HEAD
     	double x = mGPS.getLatitude();
     	double y = mGPS.getLongitude();
     	
@@ -78,11 +77,9 @@ public class FragmentMap extends Fragment {
     	}
     	
     	here = new LatLng(x, y);
-=======
     	// Opens the map at the URI Library
     	here = new LatLng(41.487352, -71.528847);
     	//here = new LatLng(mGPS.getLatitude(), mGPS.getLongitude());
->>>>>>> FETCH_HEAD
     	
         map.setMyLocationEnabled(true);
         map.moveCamera(CameraUpdateFactory.newLatLngZoom(here, 15));
@@ -90,7 +87,6 @@ public class FragmentMap extends Fragment {
                 .title("You are here")
                 .snippet("Rhody Guide")
                 .position(here));
-<<<<<<< HEAD
         try {
 			showBuildings();
 		} catch (InterruptedException e) {
@@ -158,9 +154,7 @@ public class FragmentMap extends Fragment {
 	            .snippet("")
             );
         }    	
-    }
     
-=======
         
         // Starts the overscroll handler
         mOverscrollHandler.sendEmptyMessageDelayed(0,100);
@@ -221,5 +215,4 @@ public class FragmentMap extends Fragment {
             sendEmptyMessageDelayed(0,100);
         }
     }
->>>>>>> FETCH_HEAD
 }

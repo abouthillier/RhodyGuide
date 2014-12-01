@@ -153,5 +153,4 @@
 		    android:inputType="textPassword"
 		    android:padding="12dp" />
 	</RelativeLayout>
-
 </LinearLayout>
